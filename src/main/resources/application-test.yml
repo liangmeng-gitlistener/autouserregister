@@ -4,16 +4,16 @@ server:
 #    context-path: /userRegister
 
 spring:
-#  datasource:
-#    driver-class-name: com.mysql.cj.jdbc.Driver
-#    url: jdbc:mysql://127.0.0.1:3306/luckymoney?characterEncoding=utf-8
-#    username: root
-#    password: root
-#
-#  jpa:
-#    hibernate:
-#      ddl-auto: update
-#    show-sql: true
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/gtzz?characterEncoding=utf-8
+    username: root
+    password: root
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
 
 logging:
   level:
@@ -25,3 +25,11 @@ logging:
 
 swagger:
   enabled: true
+
+system:
+  workerid: ${WORKERID:1}
+  datacenterId: ${DATACENTERID:1}
+
+data:
+  dutiesId: ${DUTIESID:123456}
+  tenantId: ${TENANTID:789123}
