@@ -1,0 +1,27 @@
+server:
+  port: 8080
+#  servlet:
+#    context-path: /userRegister
+
+spring:
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://127.0.0.1:3306/luckymoney?characterEncoding=utf-8
+#    username: root
+#    password: root
+#
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+#    show-sql: true
+
+logging:
+  level:
+    com:
+      gtzz:
+        autouserregister:
+          service: debug
+    root: info
+
+swagger:
+  enabled: true
